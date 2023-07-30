@@ -1,7 +1,7 @@
 # A-Simple-Library
 
-
-![Website Preview](https://example.com/screenshot.png)
+![Website Preview](https://imgur.com/PexBL2u)
+![Website Preview](https://imgur.com/LgCe9vd)
 
 ## Description
 
