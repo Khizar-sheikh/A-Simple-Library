@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="icon" href="Logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <header>
+        <div class="heading">
+          <h1>Library</h1>
+        </div>
+
+        <button class="Addbook" id="AddBookBtn">
+          <i class="fas fa-plus" style="color: #ffffff"></i>
+        </button>
+      </header>
+    </div>
+    <section class="form-modal" id="BookInfo">
+      <form action="" class="book-form">
+        <button class="close-form"><i class="fa-solid fa-x"></i></button>
+        <fieldset class="book-form-fieldset">
+          <label for="book-form-name">Book Name</label>
+          <input
+            id="book-form-name"
+            placeholder="Enter Book Title Here..."
+            required
+          />
+          <label for="book-form-author">Author Name</label>
+          <input
+            id="book-form-author"
+            placeholder="Enter Book Author ..."
+            required
+          />
+          <label for="book-form-pages">Pages</label>
+          <input
+            id="book-form-pages"
+            type="number"
+            min="1"
+            max="9999"
+            required
+          />
+          <label for="IsRead">Have You Read The Book?</label>
+          <select name="" id="IsRead">
+            <!-- <option value="" disabled></option> -->
+                <option class="ReadStatus" value="Read">Yes Read it</option>
+                <option class="ReadStatus" value="Unread">Not Read Yet</option>
+          </select>
+
+          <button class="bookAdded">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+<div class="deleteAll">
+        <Button id="DeleteAllBooks" class="DeleteAll">Delete All</Button>
+</div>
+    <div class="cards" id="bookCard">
+      <!-- <div class="card" id="card">
+        <p>"The Arizona"</p>
+        <p> by St.Martez</p>
+        <p>393 pages</p>
+        <div class="buttons">
+           <button class="IsRead " id="isRead">Read</button>
+          <button class="removeBook" id="removeBook">Remove Book</button>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
